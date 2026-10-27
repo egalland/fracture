@@ -79,3 +79,6 @@ setInterval(()=>{const el=$('#yarn'),seq=mascotSequences[el.dataset.state]||masc
 async function loadWoolDemo(notify=false){const previous=originalSource;try{const img=new Image();img.src='assets/wool-bouquet.webp';await img.decode();if(!notify&&previous!==originalSource)return;const c=document.createElement('canvas');c.width=img.naturalWidth;c.height=img.naturalHeight;c.getContext('2d').drawImage(img,0,0);setSource(c);$('#filename').textContent='Le bouquet de Filou · démonstration';resize();if(notify)toast('Le bouquet de Filou est de retour')}catch{if(notify){setSource(demo());resize()}}}
 
 function endComparison(){$('#original-image').classList.remove('visible');$('#compare').setAttribute('aria-pressed','false');$('#compare').textContent='Voir l’original'}
+
+// Keep importing accessible above the artwork, including when mobile moves controls below it.
+$('#import-image').onclick=()=>$('#file').click();

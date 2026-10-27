@@ -10,3 +10,5 @@
 .inactive-control{opacity:.38}.inactive-control input{cursor:not-allowed}.companion:has(#bubble[hidden]) #yarn{opacity:.95}.companion:has(#bubble[hidden]) #yarn:hover{opacity:1;transform:translateY(-7px)}
 
 @media(max-width:400px){.intro h1{font-size:29px}.intro>div{padding:17px}.brand{font-size:25px}nav .primary{font-size:9px;padding:11px 8px}}
+
+.image-import-bar{display:flex;align-items:center;gap:16px;background:#fff4e5ed;border:2px dashed #c7a384;border-radius:22px;padding:15px 18px;margin:0 0 18px;box-shadow:0 4px 0 #b49a7826}.image-import-bar .image-import-button{flex-shrink:0;font-size:14px;min-height:48px;padding:12px 20px}.image-import-bar>span{font-size:12px;color:#7f654e;line-height:1.6;font-weight:700}.image-import-bar small{display:block;font-size:10px;font-weight:500;color:#997f64}@media(max-width:700px){.image-import-bar{flex-direction:column;align-items:stretch;padding:14px;margin-bottom:15px;gap:9px;border-radius:20px}.image-import-bar .image-import-button{width:100%;font-size:16px;min-height:52px}.image-import-bar>span{text-align:center;font-size:11px}.image-import-bar small{font-size:10px}}
